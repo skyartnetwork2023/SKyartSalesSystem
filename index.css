@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+	color-scheme: light dark;
+}
+
+.scrollbar-none::-webkit-scrollbar {
+	display: none;
+}
+
+.scrollbar-none {
+	scrollbar-width: none;
+}
+
+body {
+	@apply bg-slate-100 text-slate-900 antialiased transition-colors duration-200;
+}
+
+.dark body {
+	@apply bg-slate-950 text-slate-100;
+}
+
+#root {
+	min-height: 100vh;
+	@apply bg-transparent;
+}
